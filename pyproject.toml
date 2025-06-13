@@ -1,0 +1,16 @@
+[project]
+name = "example_package"
+version = "0.1.0"
+description = "An example Python package"
+requires-python = ">=3.9"
+dependencies = ["fastapi[standard] (>=0.115.12,<0.116.0)", "uvicorn (>=0.34.3,<0.35.0)"]
+authors = [{ name = "Julian Hecker" }]
+
+[tool.poetry]
+package-mode = false
+packages = [{ include = "example_package", from = "src" }]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+ruff = "^0.11.13"
+pre-commit = "^4.2.0"
