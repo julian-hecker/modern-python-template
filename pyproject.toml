@@ -1,14 +1,15 @@
 [project]
-name = "example_package"
+name = "package_name_to_replace"
 version = "0.1.0"
 description = "An example Python package"
+readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["fastapi[standard] (>=0.115.12,<0.116.0)", "uvicorn (>=0.34.3,<0.35.0)"]
 authors = [{ name = "Julian Hecker" }]
+dependencies = ["fastapi[standard] (>=0.115.12,<0.116.0)", "uvicorn (>=0.34.3,<0.35.0)"]
 
 [tool.poetry]
 package-mode = false
-packages = [{ include = "example_package", from = "src" }]
+packages = [{ include = "package_name_to_replace", from = "src" }]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.0"
