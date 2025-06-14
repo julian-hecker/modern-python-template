@@ -1,0 +1,14 @@
+{
+    "python.poetryPath": "poetry",
+    "python.terminal.activateEnvironment": true,
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "ruff.importStrategy": "fromEnvironment",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": false
+    }
+}
